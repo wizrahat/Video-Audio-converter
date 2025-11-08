@@ -355,12 +355,12 @@
 								<p class="text-sm">{conversionError}</p>
 							</div>
 						{:else if isConverting}
-							<div class="h-3 overflow-hidden rounded-full bg-gray-700 shadow-inner">
+							<!-- <div class="h-3 overflow-hidden rounded-full bg-gray-700 shadow-inner">
 								<div
 									class="h-full bg-indigo-500 transition-all duration-100 ease-linear"
 									style="width: {conversionProgress}%;"
 								></div>
-							</div>
+							</div> -->
 							<p class="text-center text-sm text-gray-400">Processing media data...</p>
 						{:else if convertedFileBlob}
 							<!-- FIX: Removed on:click={clearResult} from the download link -->
@@ -375,12 +375,12 @@
 									</p>
 
 									<!-- New button to clear state and start over -->
-									<button
+									<!-- <button
 										on:click={clearResult}
 										class="w-full rounded-xl bg-gray-600 px-4 py-2 font-semibold text-white shadow-md transition hover:bg-gray-500 sm:w-auto"
 									>
 										Start New
-									</button>
+									</button> -->
 
 									<!-- Download link (now safe from immediate cleanup) -->
 									<a
